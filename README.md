@@ -5,15 +5,7 @@ est déjà écrit et fonctionne ; votre travail tient dans **un seul fichier**, 
 
 ## Compiler et lancer
 
-Ouvrir le dossier dans CLion (ou Visual Studio), qui lit le `CMakeLists.txt` — ou en
-ligne de commande :
-
-```bash
-cmake -S . -B build
-cmake --build build
-./build/Exercice_5            # Windows : build\Debug\Exercice_5.exe
-```
-
+Ouvrir le dossier dans CLion (ou Visual Studio), qui lit le `CMakeLists.txt`.
 Le projet **compile et tourne tel quel** : le menu s'affiche, et toutes les actions sont
 refusées. C'est normal — les méthodes de `Joueur` sont vides, et c'est à vous de les
 remplir.
@@ -22,8 +14,8 @@ remplir.
 
 | Fichier | Rôle |
 |---|---|
-| `Exercice_5/main.cpp` | **Fourni, ne pas modifier.** Lit une commande, appelle une méthode |
-| `Exercice_5/joueur.h` | **À compléter.** La classe `Joueur` et les cinq règles du jeu |
+| `Exercice_5/main.cc` | **Fourni, ne pas modifier.** Lit une commande, appelle une méthode |
+| `Exercice_5/include/joueur.h` | **À compléter.** La classe `Joueur` et les cinq règles du jeu |
 
 ## Ce qu'il y a à faire
 
@@ -40,7 +32,7 @@ Chaque méthode de `joueur.h` porte un `// TODO` et le comportement attendu :
 
 ## La règle qu'on vérifiera
 
-**Aucun attribut public.** `main.cpp` ne connaît aucun compteur : il ne sait pas qu'une
+**Aucun attribut public.** `main.cc` ne connaît aucun compteur : il ne sait pas qu'une
 course coûte 10, ni qu'il reste deux clés. Si vous vous surprenez à vouloir écrire
 `joueur.endurance_ = …` depuis le menu, c'est qu'une méthode manque.
 

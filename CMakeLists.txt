@@ -1,7 +1,8 @@
-cmake_minimum_required(VERSION 4.2)
-project("GPR-CF-POO-02 - Classes et visibilité")
+cmake_minimum_required(VERSION 3.16)
+project(GPR_CF_POO_02_ClassesEtVisibilite CXX)
 
 set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_executable(Exercice_5 "Exercice_5/main.cpp" "Exercice_5/joueur.h")
-target_include_directories(Exercice_5 PRIVATE "Exercice_5")
+add_subdirectory(Exercice_5)
